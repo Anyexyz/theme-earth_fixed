@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: Setting
 metadata:
-  name: theme-earth-setting
+  name: theme-earth_fixed-setting
 spec:
   forms:
     - group: layout
@@ -55,7 +55,7 @@ spec:
           id: header_background_image
           key: header_background_image
           label: 首页顶部背景图片
-          value: /themes/theme-earth/assets/images/default-background-2023-10-12.jpeg
+          value: /themes/theme-earth_fixed/assets/images/default-background-2023-10-12.jpeg
         - $formkit: radio
           name: content_header
           label: 文章页顶部
@@ -216,6 +216,10 @@ spec:
                   value: i-simple-icons-gitlab
                 - label: RSS
                   value: i-simple-icons-rss
+                - label: 微信支付
+                  value: i-mingcute-wechat-pay-fill
+                - label: 支付宝
+                  value: i-simple-icons-wechat
             - $formkit: text
               name: name
               label: 名称
@@ -336,6 +340,10 @@ spec:
                   value: i-simple-icons-gitlab
                 - label: RSS
                   value: i-simple-icons-rss
+	              - label: 微信支付
+                  value: i-mingcute-wechat-pay-fill
+                - label: 支付宝
+                  value: i-simple-icons-wechat
             - $formkit: text
               name: name
               label: 名称
