@@ -56,7 +56,7 @@ module.exports = {
     "i-simple-icons-x",
     "i-simple-icons-qzone",
     "i-tabler-device-desktop",
-    "i-simple-icons-alipay",
-    "i-mingcute-wechat-pay-fill"
+    "i-mingcute-wechat-pay-fill",
+    "i-simple-icons-alipay"
   ],
 };
