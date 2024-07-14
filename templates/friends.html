@@ -3,6 +3,14 @@
   xmlns:th="https://www.thymeleaf.org"
   th:replace="~{modules/layout :: html(title = ${singlePage.spec.title} + ' - ' + ${site.title}, hero = null, content = ~{::content}, head = null, footer = null, sidebar = ~{::sidebar}, contentClass = '')}"
 >
+  <th:block th:fragment="head">
+    <link rel="stylesheet" th:href="@{/assets/styles/github-markdown.css?v={version}(version=${theme.spec.version})}" />
+  </th:block>
+  <th:block th:fragment="hero">
+    <th:block
+      th:replace="~{modules/hero :: hero(isHome = false, cover = ${singlePage.spec.cover}, title = ${singlePage.spec.title})}"
+    />
+  </th:block>
   <th:block th:fragment="content">
     <div class="rounded-xl bg-white p-4 dark:bg-slate-800">
       <h1 class="mb-3 text-2xl font-medium dark:text-slate-50" th:if="${theme.config.links.show_title}" th:text="${singlePage.spec.title}"></h1>
