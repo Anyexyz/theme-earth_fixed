@@ -7,6 +7,9 @@ import colorSchemeSwitcher from "./alpine-data/color-scheme-switcher";
 import upvote from "./alpine-data/upvote";
 import share from "./alpine-data/share";
 
+// 覆盖 console.warn
+console.warn = () => {};
+
 window.Alpine = Alpine;
 
 Alpine.data("dropdown", dropdown);
